@@ -52,14 +52,14 @@ body {
 .icon-grid div:hover svg #dot,
 .icon-grid div:hover svg .circle,
 .icon-grid div:hover svg .rectangle {
-    fill: #2ecc71; /* Hover effect for SVG elements */
+    fill: #2e4bcc; /* Hover effect for SVG elements */
 }
 
 .icon-grid div:hover #icon-1,
 .icon-grid div:hover #icon-2,
 .icon-grid div:hover #icon-3,
 .icon-grid div:hover #icon-4 {
-    color: #2ecc71; /* Text hover effect */
+    color: #2e4bcc; /* Text hover effect */
 }
 
 .icon-grid img {
