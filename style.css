@@ -1,0 +1,91 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f5f7;
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
+    max-width: 1200px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.icon-grid div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icon-grid div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.icon-grid svg {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    filter: grayscale(30%); /* Professional look */
+    transition: filter 0.3s, fill 0.3s;
+}
+
+.icon-grid div:hover svg {
+    filter: grayscale(0%); /* Brings back color */
+}
+
+.icon-grid div:hover svg #currency,
+.icon-grid div:hover svg #dot,
+.icon-grid div:hover svg .circle,
+.icon-grid div:hover svg .rectangle {
+    fill: #2ecc71; /* Hover effect for SVG elements */
+}
+
+.icon-grid div:hover #icon-1,
+.icon-grid div:hover #icon-2,
+.icon-grid div:hover #icon-3,
+.icon-grid div:hover #icon-4 {
+    color: #2ecc71; /* Text hover effect */
+}
+
+.icon-grid img {
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.icon-grid img:hover {
+    filter: grayscale(0%); /* Remove grayscale on hover */
+}
+
+.icon-grid p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .icon-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .icon-grid {
+        grid-template-columns: 1fr;
+    }
+}
